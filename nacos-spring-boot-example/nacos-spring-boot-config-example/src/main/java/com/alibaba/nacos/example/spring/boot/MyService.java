@@ -17,5 +17,8 @@ public class MyService {
         System.out.println("Received updated config in MyService: " + updatedConfig);
         YourStaticClass.setSomeProperty(updatedConfig);
         System.out.println("someProperty==="+updatedConfig);
+        YourStaticClass.Inner inner = new YourStaticClass.Inner();
+        // inner.set
+        System.out.println();
     }
 }

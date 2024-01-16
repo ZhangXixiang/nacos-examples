@@ -17,4 +17,19 @@ public class YourStaticClass {
     public static void setSomeProperty(String value) {
         someProperty = value;
     }
+
+
+
+    /**
+     * 静态内部类
+     */
+    public static class Inner{
+        static String innerProperty;
+        public static String getSomeProperty() {
+            return innerProperty;
+        }
+        public static void setSomeProperty() {
+            innerProperty = someProperty;
+        }
+    }
 }
